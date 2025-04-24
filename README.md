@@ -18,6 +18,8 @@ A ProntoLoc é uma startup inovadora no setor de locações, oferecendo uma plat
 
 - HTML5
 - CSS3
+- JavaScript
+- EmailJS (para envio de emails)
 - Design responsivo
 - Fontes Google (Roboto)
 
@@ -26,6 +28,24 @@ A ProntoLoc é uma startup inovadora no setor de locações, oferecendo uma plat
 1. Clone este repositório
 2. Abra o arquivo `index.html` em seu navegador
 3. Para fazer alterações, edite os arquivos `index.html` e `style.css`
+4. Configure o EmailJS para o formulário de contato (veja a seção abaixo)
+
+## Configuração do EmailJS
+
+Para que o formulário de contato funcione corretamente, é necessário configurar o serviço EmailJS:
+
+1. Crie uma conta gratuita em [EmailJS](https://www.emailjs.com/)
+2. Crie um novo serviço de email (por exemplo, usando Gmail, Outlook, etc.)
+3. Crie um novo template de email com os seguintes parâmetros:
+   - `name`: Nome do remetente
+   - `email`: Email do remetente
+   - `phone`: Telefone do remetente
+   - `message`: Mensagem enviada
+4. Obtenha sua chave pública de API, ID do serviço e ID do template
+5. Atualize o arquivo `index.html` com suas informações:
+   - Substitua `YOUR_PUBLIC_KEY` pela sua chave pública (linha 216)
+   - Substitua `service_id` pelo ID do seu serviço (linha 236)
+   - Substitua `template_id` pelo ID do seu template (linha 236)
 
 ## Otimização SEO
 
