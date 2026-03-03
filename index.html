@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="ProntoLoc - Serviço de locação de equipamentos, carretinhas e imóveis. Uma solução a cada locação."
+      content="ProntoLoc - Serviço de locação de equipamentos, carretinhas e andaimes. Uma solução a cada locação."
     />
     <meta
       name="keywords"
-      content="locação, aluguel, betoneira, carretinha, casa, imóveis, equipamentos, ProntoLoc"
+      content="locação, aluguel, betoneira, carretinha, andaime, equipamentos, ProntoLoc"
     />
     <meta name="author" content="ProntoLoc" />
     <meta name="robots" content="index, follow" />
@@ -19,7 +19,7 @@
     />
     <meta
       property="og:description"
-      content="Serviço de locação de equipamentos, carretinhas e imóveis. Uma solução a cada locação."
+      content="Serviço de locação de equipamentos, carretinhas e andaimes. Uma solução a cada locação."
     />
     <meta property="og:image" content="./assets/Logo.png" />
     <meta property="og:url" content="https://prontoloc.com.br" />
@@ -95,11 +95,11 @@
               </p>
             </div>
             <div class="service-card animate-scale-in">
-              <div class="service-icon">🏠</div>
-              <h3>Imóveis</h3>
+              <div class="service-icon">🏗️</div>
+              <h3>Andaimes</h3>
               <p>
-                Casas, apartamentos e espaços comerciais para locação temporária
-                ou de longo prazo.
+                Andaimes tubulares e fachadeiros para obras, reformas e serviços
+                em altura com segurança.
               </p>
             </div>
           </div>
@@ -113,8 +113,8 @@
             <div class="about-text">
               <p>
                 A ProntoLoc é uma startup inovadora no setor de locações,
-                oferecendo uma plataforma completa para alugar desde
-                equipamentos de construção até imóveis residenciais.
+                oferecendo uma plataforma completa para alugar equipamentos
+                de construção, carretinhas e andaimes.
               </p>
               <p>
                 Nossa missão é simplificar o processo de locação, proporcionando
@@ -447,21 +447,6 @@
           );
         });
 
-      // Add hover effects to cards
-      document.addEventListener('DOMContentLoaded', function () {
-        const cards = document.querySelectorAll('.service-card, .benefit-card');
-
-        cards.forEach((card) => {
-          card.addEventListener('mouseenter', function () {
-            this.style.transform = 'translateY(-15px) scale(1.02)';
-          });
-
-          card.addEventListener('mouseleave', function () {
-            this.style.transform = 'translateY(0) scale(1)';
-          });
-        });
-      });
-
       // Add ripple effect to buttons
       function createRipple(event) {
         const button = event.currentTarget;
@@ -525,96 +510,6 @@
         createParticles();
       });
 
-      // Custom cursor
-      function initCustomCursor() {
-        const cursor = document.createElement('div');
-        cursor.className = 'custom-cursor';
-        document.body.appendChild(cursor);
-
-        let mouseX = 0;
-        let mouseY = 0;
-        let cursorX = 0;
-        let cursorY = 0;
-        let trailCount = 0;
-
-        // Smooth cursor movement
-        function updateCursor() {
-          cursorX += (mouseX - cursorX) * 0.1;
-          cursorY += (mouseY - cursorY) * 0.1;
-
-          cursor.style.left = cursorX + 'px';
-          cursor.style.top = cursorY + 'px';
-
-          requestAnimationFrame(updateCursor);
-        }
-
-        // Create cursor trail effect
-        function createTrail(x, y) {
-          if (trailCount % 3 === 0) {
-            // Create trail every 3 frames
-            const trail = document.createElement('div');
-            trail.className = 'cursor-trail';
-            trail.style.left = x + 'px';
-            trail.style.top = y + 'px';
-            document.body.appendChild(trail);
-
-            // Remove trail after animation
-            setTimeout(() => {
-              if (trail.parentNode) {
-                trail.parentNode.removeChild(trail);
-              }
-            }, 600);
-          }
-          trailCount++;
-        }
-
-        document.addEventListener('mousemove', (e) => {
-          mouseX = e.clientX;
-          mouseY = e.clientY;
-          createTrail(e.clientX, e.clientY);
-        });
-
-        // Start smooth cursor animation
-        updateCursor();
-
-        // Add hover effect to interactive elements
-        const interactiveElements = document.querySelectorAll(
-          'a, button, .service-card, .benefit-card, input, textarea'
-        );
-
-        interactiveElements.forEach((el) => {
-          el.addEventListener('mouseenter', () => {
-            cursor.classList.add('hover');
-            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-              cursor.classList.add('text');
-            } else {
-              cursor.classList.add('clickable');
-            }
-          });
-
-          el.addEventListener('mouseleave', () => {
-            cursor.classList.remove('hover', 'text', 'clickable');
-          });
-        });
-
-        // Hide cursor when leaving window
-        document.addEventListener('mouseleave', () => {
-          cursor.style.opacity = '0';
-        });
-
-        document.addEventListener('mouseenter', () => {
-          cursor.style.opacity = '1';
-        });
-
-        // Click effect
-        document.addEventListener('click', () => {
-          cursor.style.transform = 'translate(-50%, -50%) scale(0.8)';
-          setTimeout(() => {
-            cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-          }, 150);
-        });
-      }
-
       // Active navigation highlighting
       function updateActiveNavigation() {
         const sections = document.querySelectorAll('section[id]');
@@ -639,9 +534,8 @@
         });
       }
 
-      // Initialize custom cursor and navigation
+      // Initialize navigation
       document.addEventListener('DOMContentLoaded', function () {
-        initCustomCursor();
         updateActiveNavigation();
       });
     </script>
