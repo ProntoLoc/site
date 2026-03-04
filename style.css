@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--text-color);
   line-height: 1.6;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -256,7 +256,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -292,7 +292,7 @@ header nav a {
 }
 
 header nav a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -345,7 +345,7 @@ header nav a.active::before {
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -403,7 +403,7 @@ header nav a.active::before {
 }
 
 .cta-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -456,7 +456,7 @@ header nav a.active::before {
 .benefits h2::after,
 .app-download h2::after,
 .contact h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 100px;
   height: 4px;
@@ -491,7 +491,7 @@ header nav a.active::before {
 }
 
 .service-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -542,7 +542,7 @@ header nav a.active::before {
 }
 
 .about::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -617,7 +617,7 @@ header nav a.active::before {
 }
 
 .benefit-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -666,7 +666,7 @@ header nav a.active::before {
 }
 
 .app-download::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -752,7 +752,7 @@ header nav a.active::before {
   padding: 1rem;
   border: 2px solid transparent;
   border-radius: var(--border-radius);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -787,7 +787,7 @@ header nav a.active::before {
 }
 
 .submit-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -850,7 +850,7 @@ footer {
 }
 
 footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -904,7 +904,7 @@ footer::before {
 }
 
 .footer-column h3::after {
-  content: '';
+  content: "";
   display: block;
   width: 50px;
   height: 3px;
@@ -928,7 +928,7 @@ footer::before {
 }
 
 .footer-column a::before {
-  content: '→';
+  content: "→";
   position: absolute;
   left: -20px;
   opacity: 0;
@@ -1170,7 +1170,7 @@ footer::before {
 /* Efeito de brilho nos cards */
 .service-card::after,
 .benefit-card::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -1210,7 +1210,7 @@ footer::before {
 }
 
 .animated-border::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1230,7 +1230,7 @@ footer::before {
 }
 
 .animated-border::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 2px;
@@ -1253,7 +1253,7 @@ html {
 }
 
 .image-loading::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -1276,4 +1276,3 @@ html {
     left: 100%;
   }
 }
-
