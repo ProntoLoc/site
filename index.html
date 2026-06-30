@@ -5,25 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="ProntoLoc — Alugue betoneiras, andaimes, ferramentas e mais. Sem burocracia, entrega rápida e preço transparente."
+      content="ProntoLoc — Plataforma 100% digital para alugar e anunciar ativos e imóveis. Catálogo com mapa, reserva por calendário, contrato digital assinado e chat em tempo real. Disponível na web e no app."
     />
     <meta
       name="keywords"
-      content="locação equipamentos construção, aluguel betoneira, andaime, furadeira, carretinha, ProntoLoc"
+      content="aluguel de ativos, locação de imóveis, marketplace de locação, contrato digital, locação equipamentos construção, aluguel betoneira, andaime, carretinha, ProntoLoc"
     />
     <meta name="author" content="ProntoLoc" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#F97316" />
+    <link rel="canonical" href="https://prontoloc.com.br/" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="ProntoLoc" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://prontoloc.com.br/" />
     <meta
       property="og:title"
-      content="ProntoLoc — Alugue o equipamento certo. Hoje."
+      content="ProntoLoc — Alugue e anuncie. 100% digital."
     />
     <meta
       property="og:description"
-      content="Betoneiras, andaimes, ferramentas e mais — sem burocracia, entrega rápida e preço transparente."
+      content="Plataforma para alugar e anunciar ativos e imóveis: catálogo com mapa, reserva por calendário, contrato digital assinado e chat em tempo real."
     />
-    <meta property="og:image" content="./assets/Logo.png" />
-    <meta property="og:url" content="https://prontoloc.com.br" />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://prontoloc.com.br/assets/Logo.png" />
+    <meta property="og:image:alt" content="ProntoLoc — plataforma de aluguel de ativos e imóveis" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="ProntoLoc — Alugue e anuncie. 100% digital."
+    />
+    <meta
+      name="twitter:description"
+      content="Plataforma para alugar e anunciar ativos e imóveis: catálogo com mapa, reserva por calendário, contrato digital assinado e chat em tempo real."
+    />
+    <meta name="twitter:image" content="https://prontoloc.com.br/assets/Logo.png" />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,7 +52,95 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <title>ProntoLoc — Alugue o equipamento certo. Hoje.</title>
+    <title>ProntoLoc — Alugue e anuncie. 100% digital.</title>
+
+    <!-- Dados estruturados (Schema.org / JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://prontoloc.com.br/#organization",
+            "name": "ProntoLoc",
+            "url": "https://prontoloc.com.br/",
+            "logo": "https://prontoloc.com.br/assets/Logo.png",
+            "email": "contato@prontoloc.com.br",
+            "description": "Plataforma 100% digital para alugar e anunciar ativos e imóveis, com catálogo, reserva por calendário, contrato digital assinado e chat em tempo real.",
+            "sameAs": ["https://instagram.com/prontoloc"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://prontoloc.com.br/#website",
+            "url": "https://prontoloc.com.br/",
+            "name": "ProntoLoc",
+            "inLanguage": "pt-BR",
+            "publisher": { "@id": "https://prontoloc.com.br/#organization" }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "O que é a ProntoLoc?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A ProntoLoc é uma plataforma 100% digital para alugar e anunciar ativos e imóveis, conectando quem tem ao quem precisa, sem burocracia."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "O que posso alugar na ProntoLoc?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "De equipamentos de construção — como betoneiras, andaimes, carretinhas e ferramentas — a imóveis, espaços e praticamente qualquer ativo que possa ser alugado."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Como funciona o aluguel?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Você encontra o item no catálogo, reserva o período pelo calendário, combina os detalhes pelo chat e assina o contrato digital. Tudo acompanhado pela web ou pelo app."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "O contrato é digital?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. O contrato é gerado em PDF e assinado eletronicamente pelas partes, com trilha de auditoria de cada assinatura."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quem define o preço do aluguel?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "O preço e o período (hora, dia, semana ou mês) são definidos pelo próprio anunciante de cada item."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quanto custa para anunciar?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Você começa de graça no plano gratuito. Para quem precisa de mais, o plano Premium custa R$ 49,99 por mês."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "A ProntoLoc tem aplicativo?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A plataforma já está disponível na web e o app nativo para iOS e Android está a caminho. Entre na lista VIP para ser avisado no lançamento."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- HEADER -->
@@ -43,8 +151,9 @@
           <span>ProntoLoc</span>
         </a>
         <nav class="header-nav" id="nav">
-          <a href="#servicos">Serviços</a>
           <a href="#como-funciona">Como funciona</a>
+          <a href="#funcionalidades">Funcionalidades</a>
+          <a href="#servicos">O que alugar</a>
           <a href="#sobre">Sobre</a>
           <a href="#vip" class="nav-cta-mobile">Garantir acesso →</a>
         </nav>
@@ -60,19 +169,21 @@
       <section id="inicio" class="hero">
         <div class="hero-grid-bg"></div>
         <div class="container hero-inner">
-          <div class="hero-badge">✦ Acesso antecipado disponível</div>
-          <h1 class="hero-title">Alugue o equipamento<br />certo. Hoje.</h1>
+          <div class="hero-badge">✦ Já já no ar na web · app nativo a caminho</div>
+          <h1 class="hero-title">Alugue e anuncie.<br />100% digital.</h1>
           <p class="hero-sub">
-            Betoneiras, andaimes, compressores e mais — disponíveis perto de
-            você, sem burocracia e com preço transparente.
+            A plataforma para alugar e anunciar ativos e imóveis perto de você —
+            de betoneiras e andaimes a espaços e equipamentos. Reserva por
+            calendário, contrato digital assinado e chat em tempo real, sem
+            papelada.
           </p>
           <div class="hero-actions">
             <a href="#vip" class="btn btn-primary btn-lg"
-              >Garantir acesso gratuito →</a
+              >Garantir acesso antecipado →</a
             >
           </div>
           <p class="hero-social-proof">
-            Junte-se a centenas de profissionais na lista VIP
+            Entre na lista VIP e seja avisado quando o app for lançado
           </p>
         </div>
       </section>
@@ -85,24 +196,24 @@
               <div class="pain-icon">⏱</div>
               <h3>Perda de tempo</h3>
               <p>
-                Horas no telefone para encontrar o equipamento disponível perto
-                da obra.
+                Horas no telefone até achar quem tem o que você precisa
+                disponível e perto de você.
               </p>
             </div>
             <div class="pain-card reveal">
               <div class="pain-icon">💸</div>
               <h3>Preços ocultos</h3>
               <p>
-                Taxas de entrega, caução e seguros que aparecem só na hora de
-                fechar.
+                Valores e condições que só aparecem na hora de fechar, sem
+                transparência de preço e período.
               </p>
             </div>
             <div class="pain-card reveal">
               <div class="pain-icon">📋</div>
               <h3>Burocracia</h3>
               <p>
-                Contratos complicados e processos lentos que travam o andamento
-                da obra.
+                Contratos em papel, idas e vindas e processos lentos para algo
+                que deveria ser rápido.
               </p>
             </div>
           </div>
@@ -119,26 +230,117 @@
           <div class="steps-grid">
             <div class="step reveal">
               <div class="step-number">01</div>
-              <h3>Busque no catálogo</h3>
+              <h3>Encontre</h3>
               <p>
-                Encontre o equipamento que precisa, veja disponibilidade e preço
-                em tempo real.
+                Busque no catálogo com filtros e mapa, veja preço, período e
+                disponibilidade em tempo real.
               </p>
             </div>
             <div class="step-divider"></div>
             <div class="step reveal">
               <div class="step-number">02</div>
-              <h3>Reserve em segundos</h3>
+              <h3>Reserve</h3>
               <p>
-                Escolha as datas, confirme o endereço e finalize. Sem ligações,
-                sem papelada.
+                Escolha as datas no calendário — os períodos já ocupados ficam
+                bloqueados — e envie o pedido ao anunciante.
               </p>
             </div>
             <div class="step-divider"></div>
             <div class="step reveal">
               <div class="step-number">03</div>
-              <h3>Receba na obra</h3>
-              <p>O equipamento chega no horário combinado. Pronto para usar.</p>
+              <h3>Feche com segurança</h3>
+              <p>
+                Combine os detalhes pelo chat, assine o contrato digital e
+                acompanhe tudo pelo app ou pela web.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FUNCIONALIDADES -->
+      <section id="funcionalidades" class="features-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Funcionalidades</span>
+            <h2>Tudo que você precisa, num só lugar</h2>
+            <p class="section-sub">
+              Do anúncio ao contrato assinado, a ProntoLoc cuida de cada etapa da
+              locação — de ponta a ponta e 100% digital.
+            </p>
+          </div>
+          <div class="services-grid">
+            <div class="service-item reveal">
+              <div class="service-icon">🔎</div>
+              <h3>Catálogo com mapa</h3>
+              <p>
+                Busca com filtros por categoria, preço e localização, com mapa e
+                ordenação por proximidade.
+              </p>
+            </div>
+            <div class="service-item reveal">
+              <div class="service-icon">📅</div>
+              <h3>Reserva por calendário</h3>
+              <p>
+                Escolha o período num calendário que já bloqueia as datas
+                ocupadas do item.
+              </p>
+            </div>
+            <div class="service-item reveal">
+              <div class="service-icon">✍️</div>
+              <h3>Contrato digital</h3>
+              <p>
+                Contrato gerado em PDF e assinado eletronicamente, com trilha de
+                auditoria.
+              </p>
+            </div>
+            <div class="service-item reveal">
+              <div class="service-icon">💬</div>
+              <h3>Chat em tempo real</h3>
+              <p>
+                Converse direto com o anunciante para combinar detalhes, entrega
+                e devolução.
+              </p>
+            </div>
+            <div class="service-item reveal">
+              <div class="service-icon">🔔</div>
+              <h3>Notificações</h3>
+              <p>
+                Avisos in-app e push a cada nova reserva, mensagem ou atualização
+                de contrato.
+              </p>
+            </div>
+            <div class="service-item reveal">
+              <div class="service-icon">💳</div>
+              <h3>Aluguéis e pagamentos</h3>
+              <p>
+                Acompanhe reservas, aluguéis e recebimentos, do pedido à
+                devolução do item.
+              </p>
+            </div>
+            <div class="service-item reveal">
+              <div class="service-icon">🏪</div>
+              <h3>Vitrine pública</h3>
+              <p>
+                Sua loja com endereço próprio reunindo todos os seus anúncios num
+                perfil público.
+              </p>
+            </div>
+            <div class="service-item reveal">
+              <div class="service-icon">📊</div>
+              <h3>Painel com métricas</h3>
+              <p>
+                Visualizações, reservas e desempenho dos seus anúncios num
+                dashboard claro.
+              </p>
+            </div>
+            <div class="service-item reveal">
+              <div class="service-icon">📱</div>
+              <h3>App nativo + Web</h3>
+              <p>
+                Use pelo navegador agora; o app para iOS e Android está a
+                caminho.
+              </p>
             </div>
           </div>
         </div>
@@ -150,6 +352,11 @@
           <div class="section-header">
             <span class="section-label">Catálogo</span>
             <h2>O que você pode alugar</h2>
+            <p class="section-sub">
+              Equipamentos de construção são nosso destaque — mas na ProntoLoc
+              você anuncia e aluga praticamente qualquer ativo, além de imóveis e
+              espaços.
+            </p>
           </div>
           <div class="services-grid">
             <div class="service-item reveal">
@@ -178,10 +385,36 @@
               <p>Para pintura, limpeza e ferramentas pneumáticas</p>
             </div>
             <div class="service-item service-item--more reveal">
-              <div class="service-icon">➕</div>
-              <h3>E muito mais</h3>
-              <p>Catálogo completo em breve no aplicativo</p>
+              <div class="service-icon">🏠</div>
+              <h3>Imóveis, espaços e muito mais</h3>
+              <p>Qualquer ativo pode ser anunciado e alugado na plataforma</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARA ANUNCIANTES -->
+      <section class="host-section">
+        <div class="container">
+          <div class="host-inner reveal">
+            <span class="section-label">Para anunciantes</span>
+            <h2>Tem um ativo parado? Coloque para gerar renda.</h2>
+            <p>
+              Cadastre seu item em minutos, defina preço e período, receba
+              pedidos de reserva e tenha o contrato gerado automaticamente. Você
+              cuida do anúncio; a plataforma cuida do resto.
+            </p>
+            <div class="host-steps">
+              <span>1 · Cadastre com fotos</span>
+              <span>2 · Defina preço e período</span>
+              <span>3 · Receba reservas</span>
+              <span>4 · Contrato automático</span>
+            </div>
+            <a href="#vip" class="btn btn-primary btn-lg">Quero anunciar →</a>
+            <p class="host-note">
+              Comece de graça no plano gratuito. Precisa de mais? O plano Premium
+              sai por R$ 49,99/mês.
+            </p>
           </div>
         </div>
       </section>
@@ -193,25 +426,33 @@
             <span class="section-label">Por que a ProntoLoc</span>
             <h2>A locação que a obra merece</h2>
             <p class="benefits-desc">
-              Somos uma plataforma criada por quem entende de obra. Nossa missão
-              é eliminar a burocracia e entregar agilidade para o construtor
-              brasileiro.
+              A ProntoLoc conecta quem tem ao quem precisa e tira a burocracia do
+              caminho. Toda a locação acontece de forma transparente e digital —
+              da busca ao contrato assinado.
             </p>
             <ul class="benefits-list">
               <li>
-                <span class="check">✓</span> Preço transparente, sem surpresas
-              </li>
-              <li><span class="check">✓</span> Entrega e retirada agendadas</li>
-              <li>
-                <span class="check">✓</span> Equipamentos revisados e em bom
-                estado
+                <span class="check">✓</span> Preço e período transparentes (hora,
+                dia, semana ou mês)
               </li>
               <li>
-                <span class="check">✓</span> Suporte rápido via app ou WhatsApp
+                <span class="check">✓</span> Contrato digital assinado
+                eletronicamente
               </li>
               <li>
-                <span class="check">✓</span> Seguro incluído em todas as
-                locações
+                <span class="check">✓</span> Chat direto com o anunciante, em
+                tempo real
+              </li>
+              <li>
+                <span class="check">✓</span> Calendário de disponibilidade
+                sempre atualizado
+              </li>
+              <li>
+                <span class="check">✓</span> Na web hoje e no app (iOS e Android)
+                em breve
+              </li>
+              <li>
+                <span class="check">✓</span> Comece de graça no plano gratuito
               </li>
             </ul>
           </div>
@@ -222,16 +463,81 @@
             </div>
             <div class="stat-card stat-card--accent">
               <div class="stat-number">0</div>
-              <div class="stat-label">burocracia</div>
+              <div class="stat-label">papelada</div>
             </div>
             <div class="stat-card">
               <div class="stat-number">24h</div>
-              <div class="stat-label">disponibilidade</div>
+              <div class="stat-label">no ar, todo dia</div>
             </div>
             <div class="stat-card stat-card--outline">
-              <div class="stat-number">★★★★★</div>
-              <div class="stat-label">satisfação garantida</div>
+              <div class="stat-number">Web · App</div>
+              <div class="stat-label">onde você estiver</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="faq-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Dúvidas frequentes</span>
+            <h2>Perguntas e respostas</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item reveal">
+              <summary>O que é a ProntoLoc?</summary>
+              <p>
+                A ProntoLoc é uma plataforma 100% digital para alugar e anunciar
+                ferramentas, equipamentos e imóveis, conectando quem tem ao quem precisa, sem
+                burocracia.
+              </p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>O que posso alugar na ProntoLoc?</summary>
+              <p>
+                De equipamentos de construção — como betoneiras, andaimes,
+                carretinhas e ferramentas — a imóveis, espaços e praticamente
+                qualquer ativo que possa ser alugado.
+              </p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Como funciona o aluguel?</summary>
+              <p>
+                Você encontra o item no catálogo, reserva o período pelo
+                calendário, combina os detalhes pelo chat e assina o contrato
+                digital. Tudo acompanhado pela web ou pelo app.
+              </p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>O contrato é digital?</summary>
+              <p>
+                Sim. O contrato é gerado em PDF e assinado eletronicamente pelas
+                partes, com trilha de auditoria de cada assinatura.
+              </p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Quem define o preço do aluguel?</summary>
+              <p>
+                O preço e o período (hora, dia, semana ou mês) são definidos pelo
+                próprio anunciante de cada item.
+              </p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Quanto custa para anunciar?</summary>
+              <p>
+                Você começa de graça no plano gratuito. Para quem precisa de mais,
+                o plano Premium custa R$ 49,99 por mês.
+              </p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>A ProntoLoc tem aplicativo?</summary>
+              <p>
+                A plataforma já está disponível na web e o app nativo para iOS e
+                Android está a caminho. Entre na lista VIP para ser avisado no
+                lançamento.
+              </p>
+            </details>
           </div>
         </div>
       </section>
@@ -244,13 +550,13 @@
               <span class="section-label">Acesso antecipado</span>
               <h2>Entre na lista VIP agora</h2>
               <p>
-                Seja um dos primeiros a usar a plataforma. Membros VIP têm
-                desconto exclusivo no lançamento e acesso prioritário ao
-                catálogo.
+                A plataforma já está no ar na web e o app nativo está chegando.
+                Entre na lista VIP para ser avisado em primeira mão e aproveitar
+                as vantagens de quem chega primeiro.
               </p>
               <ul class="vip-perks">
-                <li>🎁 Desconto de 20% no primeiro aluguel</li>
-                <li>🚀 Acesso antes do lançamento oficial</li>
+                <li>🎁 Período grátis no plano Premium para anunciar</li>
+                <li>🚀 Aviso prioritário quando o app for lançado</li>
                 <li>💬 Feedback direto com o time fundador</li>
               </ul>
             </div>
@@ -313,15 +619,17 @@
       <div class="container footer-inner">
         <div class="footer-brand">
           <img src="./assets/Logo.png" alt="ProntoLoc" class="footer-logo" />
-          <p>Alugue o equipamento certo. Hoje.</p>
+          <p>Alugue e anuncie. 100% digital.</p>
         </div>
         <div class="footer-cols">
           <div class="footer-col">
             <h4>Navegação</h4>
             <ul>
               <li><a href="#inicio">Início</a></li>
-              <li><a href="#servicos">Serviços</a></li>
               <li><a href="#como-funciona">Como funciona</a></li>
+              <li><a href="#funcionalidades">Funcionalidades</a></li>
+              <li><a href="#servicos">O que alugar</a></li>
+              <li><a href="#faq">Dúvidas frequentes</a></li>
               <li><a href="#vip">Lista VIP</a></li>
             </ul>
           </div>
