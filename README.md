@@ -37,13 +37,33 @@ A plataforma já está no ar na **web** (Next.js) e tem um **app nativo** (Flutt
 
 ```
 site/
-├── index.html      # Página completa (markup + JS inline)
-├── style.css       # Design system e estilos
-├── assets/         # Logo e ícones
+├── index.html      # Página em pt-BR (padrão, raiz) — markup + JS inline
+├── es/index.html   # Página em espanhol (/es/)
+├── en/index.html   # Página em inglês (/en/)
+├── style.css       # Design system e estilos (compartilhado pelos 3 idiomas)
+├── assets/         # Logo e ícones (referenciados via /assets/…)
+├── sitemap.xml     # Sitemap com as 3 URLs + alternativas hreflang
+├── robots.txt      # Aponta o sitemap
 ├── CNAME           # Domínio (prontoloc.com.br)
 ├── Dockerfile      # Imagem nginx:alpine para servir o estático
 └── README.md
 ```
+
+## Idiomas (i18n)
+
+O site é publicado em três idiomas, cada um como **página estática própria** (melhor para SEO — cada idioma é indexado como página real):
+
+| Idioma | URL | Arquivo |
+|--------|-----|---------|
+| Português (pt-BR) | `/` | `index.html` |
+| Español (es) | `/es/` | `es/index.html` |
+| English (en) | `/en/` | `en/index.html` |
+
+- O seletor de idioma (`PT · ES · EN`) fica no header de cada página, com links absolutos (`/`, `/es/`, `/en/`).
+- Cada página tem `lang`, `<title>`, meta description/keywords, Open Graph (`og:locale`), `canonical` e JSON-LD (FAQPage) **próprios do idioma**, além do mesmo bloco de `hreflang` apontando para as três variantes.
+- As páginas em subdiretório referenciam CSS e assets por **caminho absoluto** (`/style.css`, `/assets/…`) para funcionar a partir de `/es/` e `/en/`.
+
+> **Manutenção**: as três páginas são cópias independentes (não há build). Qualquer mudança de **layout ou conteúdo** precisa ser replicada nos três arquivos (`index.html`, `es/index.html`, `en/index.html`). O `style.css` e o JS inline são idênticos entre elas. O `action` do formulário e os `value` dos `<option>` (`locatario`/`locador`) são iguais em todos os idiomas para o backend receber valores consistentes.
 
 ## Como Usar (dev)
 

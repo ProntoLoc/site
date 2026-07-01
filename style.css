@@ -189,6 +189,30 @@ header.header--scrolled {
 
 .header-cta { margin-left: 0.5rem; flex-shrink: 0; }
 
+/* Seletor de idioma */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  flex-shrink: 0;
+  margin-left: 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--border);
+}
+
+.lang-switcher a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-3);
+  padding: 0.3rem 0.45rem;
+  border-radius: 6px;
+  letter-spacing: 0.03em;
+  transition: color 0.15s, background 0.15s;
+}
+
+.lang-switcher a:hover { color: var(--text); background: var(--border-subtle); }
+.lang-switcher a.lang-active { color: var(--accent); }
+
 /* Hamburger */
 .nav-toggle {
   display: none;
@@ -858,8 +882,9 @@ header.header--scrolled {
    ========================================= */
 @media (max-width: 768px) {
   /* Nav mobile */
-  .nav-toggle { display: flex; }
+  .nav-toggle { display: flex; margin-left: 0.25rem; }
   .header-cta { display: none; }
+  .lang-switcher { margin-left: auto; }
 
   .header-nav {
     display: none;
